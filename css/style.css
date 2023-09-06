@@ -1,0 +1,322 @@
+/* Reset default styles and apply a base font */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: rgb(21, 6, 72);
+  padding: .01px ;
+  font-family: "Arial", sans-serif; /* Replace "Arial" with your desired font */
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  justify-content: center; /* Center the list items */
+
+}
+
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2e9e9;
+  font-weight: bold;
+  font-size: 25px; /* Adjust the font size as needed */
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Introduction section styles */
+.intro {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.section__title--intro {
+  font-size: 48px;
+  margin-bottom: 10px; /* Adjust the bottom margin as needed */
+  margin-top: 0; /* Add this line to remove the top margin */
+}
+
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-list__item {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__image {
+  max-width: 500px;
+  margin-right: 30px;
+  border: 4px double #555;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.intro__text {
+  text-align: left;
+  background-color: rgb(21, 6, 72);
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+.intro__text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Add your additional styles for other sections and elements here */
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__item {
+    margin-bottom: 10px;
+  }
+
+  .intro__content {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .intro__image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }      
+}
+
+.skills 
+{
+  background-color: #fff;
+  padding: 50px; /* Add more padding around the section */
+  background-color: #f5f5f5; /* A soft background color */
+}
+
+.section__title--skills {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 2px solid #333; /* Add a 2px solid line under the title */
+  padding-bottom: 10px; /* Add some padding below the line */
+}
+
+.skills__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 20px; /* Gap between the grid items */
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f0e7; /* Light brown background color */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px; /* Adjust the width as per your preference */
+  margin: 0 auto; /* Center the skill category within its container */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 40%;
+}
+
+.skill-category h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.skill-category p {
+  font-size: 16px;
+  color: #666;
+}
+
+.coursework {
+  max-width: 500px; /* Adjust the width as needed */
+  overflow-wrap: break-word;
+}
+
+
+
+/*othercontributions*/
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Enhance Navigation */
+nav a:hover {
+  color: #ff6b6b; /* A shade of red for hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Improve Readability */
+.skill-category p {
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+/* Enhance Imagery */
+.skill-category img {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.skill-category:hover img {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+/* Other Contributions Section - If you want to separate it */
+.othercontributions {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.othercontributions h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.othercontributions p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .skills__content {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+}
+
+.experience {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 50px;
+}
+
+.section__title--experience {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 20px; /* adjust based on your preference */
+  border-bottom: 2px solid #333; /* add a 2px solid line under the title */
+  padding-bottom: 10px; /* some padding below the line */
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 30px; /* Space between grid items */
+}
+
+.experience__item {
+  padding: 20px;
+  background-color: #fff; /* White background for each item */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+}
+
+.experience__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.experience__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.experience__date {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience__description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
